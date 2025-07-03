@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be.Spirit Festival - Movement. Music. Love.</title>
+    <meta name="description"
+        content="Experience the ultimate festival of movement, music, and love at Be.Spirit Farm. May 10-12, 2035.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-custom" href="#home">
+                <div class="logo-icon">
+                    <div class="sun-icon">
+                        <div class="sun-center"></div>
+                        <div class="sun-ring"></div>
+                        <div class="sun-ray" style="transform: translateX(-50%) rotate(0deg);"></div>
+                        <div class="sun-ray" style="transform: translateX(-50%) rotate(45deg);"></div>
+                        <div class="sun-ray" style="transform: translateX(-50%) rotate(90deg);"></div>
+                        <div class="sun-ray" style="transform: translateX(-50%) rotate(135deg);"></div>
+                        <div class="sun-ray" style="transform: translateX(-50%) rotate(180deg);"></div>
+                        <div class="sun-ray" style="transform: translateX(-50%) rotate(225deg);"></div>
+                        <div class="sun-ray" style="transform: translateX(-50%) rotate(270deg);"></div>
+                        <div class="sun-ray" style="transform: translateX(-50%) rotate(315deg);"></div>
+                    </div>
+                </div>
+                <div class="brand-text">
+                    <h1>BE.SPIRIT</h1>
+                    <p>FESTIVAL</p>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lineup">LINEUP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community">COMMUNITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+                <button class="btn btn-register">Register Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="parallax">
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-subtitle">EXPERIENCE</p>
+                    <h1 class="hero-title font-serif">
+                        Movement.<br>
+                        Music.Love.
+                    </h1>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <p class="event-details">july 10, 2025, 7:00 PM | Be.Spirit Farm</p>
+
+                    <div class="countdown-container mb-4">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <div class="countdown-item">
+                                    <div class="countdown-number" id="days">00</div>
+                                    <div class="countdown-label">Days</div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="countdown-item">
+                                    <div class="countdown-number" id="hours">00</div>
+                                    <div class="countdown-label">Hours</div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="countdown-item">
+                                    <div class="countdown-number" id="minutes">00</div>
+                                    <div class="countdown-label">Minutes</div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="countdown-item">
+                                    <div class="countdown-number" id="seconds">00</div>
+                                    <div class="countdown-label">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-tickets">Tickets Available Now</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+    </div>
+    <!-- Register Form -->
+    <div class="register-container" id="registerContainer">
+        <div class="close-btn" id="closeBtn">&times;</div>
+        <h2>Register</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required />
+            </div>
+            <div class="form-group">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" id="confirm" required />
+            </div>
+            <button type="submit" class="register-btn">Register</button>
+            <div class="message" id="registerMessage"></div>
+        </form>
+    </div>
+
+    <!-- About/Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">The Experience</h2>
+            <p class="section-subtitle">
+                Be.Spirit Festival is more than just music. It's a transformative journey that connects souls,
+                celebrates movement, and creates lasting memories in the heart of nature.
+            </p>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h3>Music</h3>
+                            <p>World-class artists and emerging talents come together to create an unforgettable sonic
+                                experience across multiple stages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Movement</h3>
+                            <p>Yoga sessions, dance workshops, and movement therapy create a holistic experience for
+                                body and mind.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Community</h3>
+                            <p>Connect with like-minded souls in a safe, inclusive environment that celebrates diversity
+                                and unity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">A Sacred Space</h3>
+                    <p class="mb-4">
+                        Nestled in the rolling hills of Be.Spirit Farm, our festival grounds offer a perfect blend of
+                        natural beauty and modern amenities. From sunrise yoga to midnight dance sessions, every moment
+                        is designed to elevate your spirit.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>3 Main Stages + Intimate Acoustic
+                            Venues</li>
+                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Wellness & Healing Sanctuary</li>
+                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Artisan Market & Local Food
+                            Vendors</li>
+                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Camping & Glamping Options</li>
+                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>24/7 Security & Medical Support
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center p-5" style="background: rgba(251, 191, 36, 0.1); border-radius: 12px;">
+                        <div class="display-1 text-warning mb-3">3</div>
+                        <h4 class="mb-2">Days of Magic</h4>
+                        <p class="text-muted mb-4">May 10-12, 2035</p>
+                        <div class="display-3 text-warning mb-3">50+</div>
+                        <h4 class="mb-2">Artists & Performers</h4>
+                        <p class="text-muted">From around the world</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax"></div>
+    <!-- Lineup Section -->
+    <section id="lineup" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Artist Lineup</h2>
+            <p class="section-subtitle">
+                Experience transcendent performances from visionary artists who blend music, spirituality, and
+                consciousness.
+            </p>
+
+            <!-- Featured Artists -->
+            <h3 class="text-center mb-4">Headliners</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card artist-card">
+                        <div class="artist-image" style="background-image: url('./ar.jpg');">
+                            <div>
+                                <div class="artist-badge">Friday</div>
+                                <h4 class="artist-name">A.R. Rahman</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted mb-2">Electronic Ambient</p>
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>9:00 PM</span>
+                                <span>Main Stage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card artist-card">
+                        <div class="artist-image" style="background-image: url('./sid.jpg');">
+                            <div>
+                                <div class="artist-badge">Saturday</div>
+                                <h4 class="artist-name">Sid Sriram</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted mb-2">Folk Fusion</p>
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>7:30 PM</span>
+                                <span>Main Stage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card artist-card">
+                        <div class="artist-image" style="background-image: url('./chinmayi.jpg');">
+                            <div>
+                                <div class="artist-badge">Sunday</div>
+                                <h4 class="artist-name">Chinmayi</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted mb-2">Psychedelic Rock</p>
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>8:00 PM</span>
+                                <span>Main Stage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supporting Artists -->
+            <h3 class="text-center mb-4">Supporting Artists</h3>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">Sacred Drums Collective</h5>
+                                <span class="badge bg-outline-secondary">Friday</span>
+                            </div>
+                            <p class="text-muted mb-2">World Music</p>
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>6:00 PM</span>
+                                <span>Spirit Stage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">Ethereal Voices</h5>
+                                <span class="badge bg-outline-secondary">Saturday</span>
+                            </div>
+                            <p class="text-muted mb-2">Vocal Harmony</p>
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>5:00 PM</span>
+                                <span>Acoustic Garden</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">Digital Shaman</h5>
+                                <span class="badge bg-outline-secondary">Sunday</span>
+                            </div>
+                            <p class="text-muted mb-2">Techno Spiritual</p>
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>10:00 PM</span>
+                                <span>Electronic Dome</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="text-muted mb-3">And many more artists to be announced...</p>
+                <span class="badge bg-warning text-dark px-4 py-2 fs-6">More Artists Coming Soon</span>
+            </div>
+        </div>
+    </section>
+    <div class="parallax"></div>
+    <!-- Schedule Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Festival Schedule</h2>
+            <p class="section-subtitle">
+                Three days of carefully curated experiences designed to nourish your body, mind, and spirit.
+            </p>
+
+            <div class="row g-4">
+                <!-- Friday Schedule -->
+                <div class="col-lg-4">
+                    <div class="card schedule-card">
+                        <div class="schedule-header">
+                            <h3 class="mb-0">Friday</h3>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>2:00 PM</span>
+                                    <span class="event-badge badge-info">info</span>
+                                </div>
+                                <h6 class="schedule-event">Gates Open & Registration</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Main
+                                    Entrance</p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>3:00 PM</span>
+                                    <span class="event-badge badge-ceremony">ceremony</span>
+                                </div>
+                                <h6 class="schedule-event">Opening Ceremony</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Main Stage
+                                </p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>4:00 PM</span>
+                                    <span class="event-badge badge-wellness">wellness</span>
+                                </div>
+                                <h6 class="schedule-event">Sunset Yoga Flow</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Wellness
+                                    Sanctuary</p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>6:00 PM</span>
+                                    <span class="event-badge badge-music">music</span>
+                                </div>
+                                <h6 class="schedule-event">Sacred Drums Collective</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Spirit Stage
+                                </p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>9:00 PM</span>
+                                    <span class="event-badge badge-headliner">headliner</span>
+                                </div>
+                                <h6 class="schedule-event">Luna Mystica</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Main Stage
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saturday Schedule -->
+                <div class="col-lg-4">
+                    <div class="card schedule-card">
+                        <div class="schedule-header">
+                            <h3 class="mb-0">Saturday</h3>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>7:00 AM</span>
+                                    <span class="event-badge badge-wellness">wellness</span>
+                                </div>
+                                <h6 class="schedule-event">Sunrise Meditation</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Hilltop
+                                    Circle</p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>11:00 AM</span>
+                                    <span class="event-badge badge-workshop">workshop</span>
+                                </div>
+                                <h6 class="schedule-event">Movement Workshop</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Dance
+                                    Pavilion</p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>3:00 PM</span>
+                                    <span class="event-badge badge-wellness">wellness</span>
+                                </div>
+                                <h6 class="schedule-event">Sound Healing Circle</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Wellness
+                                    Sanctuary</p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>5:00 PM</span>
+                                    <span class="event-badge badge-music">music</span>
+                                </div>
+                                <h6 class="schedule-event">Ethereal Voices</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Acoustic
+                                    Garden</p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>7:30 PM</span>
+                                    <span class="event-badge badge-headliner">headliner</span>
+                                </div>
+                                <h6 class="schedule-event">The Wandering Souls</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Main Stage
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sunday Schedule -->
+                <div class="col-lg-4">
+                    <div class="card schedule-card">
+                        <div class="schedule-header">
+                            <h3 class="mb-0">Sunday</h3>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>8:00 AM</span>
+                                    <span class="event-badge badge-wellness">wellness</span>
+                                </div>
+                                <h6 class="schedule-event">Morning Breathwork</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Wellness
+                                    Sanctuary</p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>12:00 PM</span>
+                                    <span class="event-badge badge-ceremony">ceremony</span>
+                                </div>
+                                <h6 class="schedule-event">Closing Circle Preparation</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Main Stage
+                                </p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>4:00 PM</span>
+                                    <span class="event-badge badge-ceremony">ceremony</span>
+                                </div>
+                                <h6 class="schedule-event">Gratitude Ceremony</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Sacred Grove
+                                </p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>8:00 PM</span>
+                                    <span class="event-badge badge-headliner">headliner</span>
+                                </div>
+                                <h6 class="schedule-event">Cosmic Vibrations</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Main Stage
+                                </p>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="schedule-time"><i class="fas fa-clock me-1"></i>12:00 AM</span>
+                                    <span class="event-badge badge-ceremony">ceremony</span>
+                                </div>
+                                <h6 class="schedule-event">Closing Ceremony</h6>
+                                <p class="schedule-location mb-0"><i class="fas fa-map-marker-alt me-1"></i>Main Stage
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section-padding community-section">
+        <div class="container">
+            <h2 class="section-title">Our Community</h2>
+            <p class="section-subtitle">
+                Be.Spirit Festival is built on the foundation of love, acceptance, and unity. Join a community that
+                celebrates diversity and creates lasting connections.
+            </p>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Inclusive Space</h3>
+                            <p>All are welcome regardless of background, identity, or experience level.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Love & Respect</h3>
+                            <p>Built on principles of compassion, kindness, and mutual respect.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Global Connection</h3>
+                            <p>Connect with souls from around the world in meaningful ways.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Safe Environment</h3>
+                            <p>Zero tolerance for harassment with 24/7 support and security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="card contact-card">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Community Guidelines</h3>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-warning rounded-circle me-3 mt-1" style="width: 8px; height: 8px;">
+                                    </div>
+                                    <p class="mb-2"><strong>Respect:</strong> Treat everyone with kindness and
+                                        consideration</p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-warning rounded-circle me-3 mt-1" style="width: 8px; height: 8px;">
+                                    </div>
+                                    <p class="mb-2"><strong>Consent:</strong> Always ask before physical contact or
+                                        photos</p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-warning rounded-circle me-3 mt-1" style="width: 8px; height: 8px;">
+                                    </div>
+                                    <p class="mb-2"><strong>Environment:</strong> Leave no trace and respect our natural
+                                        setting</p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-warning rounded-circle me-3 mt-1" style="width: 8px; height: 8px;">
+                                    </div>
+                                    <p class="mb-2"><strong>Participation:</strong> Engage authentically and support
+                                        others</p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-warning rounded-circle me-3 mt-1" style="width: 8px; height: 8px;">
+                                    </div>
+                                    <p class="mb-0"><strong>Safety:</strong> Look out for each other and report concerns
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center p-5"
+                        style="background: linear-gradient(135deg, var(--primary-yellow), #f97316); border-radius: 12px; color: black;">
+                        <h4 class="mb-4">Join Our Community</h4>
+                        <p class="mb-4">Connect with fellow festival-goers before, during, and after the event.</p>
+                        <div class="d-grid gap-3">
+                            <button class="btn btn-light text-dark">Join Discord Server</button>
+                            <button class="btn btn-outline-light text-dark">Facebook Group</button>
+                            <button class="btn btn-outline-light text-dark">Volunteer Program</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center mb-5">Community Stories</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <p class="testimonial-quote">"Be.Spirit changed my life. I found my tribe and discovered
+                                parts of myself I never knew existed."</p>
+                            <div>
+                                <p class="testimonial-author mb-0">Sarah M.</p>
+                                <p class="testimonial-role">2034 Attendee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <p class="testimonial-quote">"The sense of belonging and acceptance here is unlike anything
+                                I've experienced. Pure magic."</p>
+                            <div>
+                                <p class="testimonial-author mb-0">David L.</p>
+                                <p class="testimonial-role">3-Year Veteran</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <p class="testimonial-quote">"From stranger to family in three days. The connections made
+                                here last a lifetime."</p>
+                            <div>
+                                <p class="testimonial-author mb-0">Maya P.</p>
+                                <p class="testimonial-role">Community Leader</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Have questions about the festival? Need assistance with tickets or accommodations? We're here to help
+                make your Be.Spirit experience magical.
+            </p>
+
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <!-- Contact Information -->
+                    <div class="card contact-card mb-4">
+                        <div class="card-header">
+                            <h4 class="mb-0">Festival Information</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                                    <div>
+                                        <h6 class="mb-1">Location</h6>
+                                        <p class="mb-0">
+                                            Be.Spirit Farm<br>
+                                            1234 Harmony Road<br>
+                                            Coimbatore
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-phone contact-icon"></i>
+                                    <div>
+                                        <h6 class="mb-1">Phone</h6>
+                                        <p class="mb-1">+918888222211</p>
+                                        <small class="text-muted">Mon-Fri 9AM-6PM PST</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-envelope contact-icon"></i>
+                                    <div>
+                                        <h6 class="mb-1">Email</h6>
+                                        <p class="mb-1">hello@bespiritfestival.com</p>
+                                        <small class="text-muted">We respond within 24 hours</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-clock contact-icon"></i>
+                                    <div>
+                                        <h6 class="mb-1">Festival Dates</h6>
+                                        <p class="mb-1">Dec 10-12, 2025</p>
+                                        <small class="text-muted">Gates open Friday 2PM</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Contact Form -->
+                    <div class="card contact-card">
+                        <div class="card-header">
+                            <h4 class="mb-0">Send Us a Message</h4>
+                        </div>
+                        <div class="card-body">
+                            <form id="contactForm">
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Name *</label>
+                                        <input type="text" class="form-control" id="name" required
+                                            placeholder="Your full name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control" id="email" required
+                                            placeholder="your@email.com">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <input type="text" class="form-control" id="subject" required
+                                        placeholder="What's this about?">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" rows="6" required
+                                        placeholder="Tell us how we can help..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="mt-5">
+                <h3 class="text-center mb-5">Frequently Asked Questions</h3>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What should I bring to the festival?</h5>
+                                <p class="card-text">Bring comfortable clothing, sunscreen, water bottle, camping gear
+                                    (if camping), and an open heart! Full packing list available in your ticket
+                                    confirmation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Are there age restrictions?</h5>
+                                <p class="card-text">Be.Spirit is an all-ages event. Children under 12 are free with
+                                    adult supervision. We have dedicated family areas and activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What food options are available?</h5>
+                                <p class="card-text">We feature local organic vendors, vegetarian/vegan options, and
+                                    accommodate most dietary restrictions. Food trucks and pop-ups throughout the
+                                    grounds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Can I leave and re-enter the festival?</h5>
+                                <p class="card-text">Yes! With your wristband, you can leave and return. We recommend
+                                    staying on-site to fully immerse in the experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What if it rains?</h5>
+                                <p class="card-text">Rain or shine, the festival continues! We have covered areas and
+                                    the energy is amazing in all weather. Bring rain gear just in case.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Is there parking available?</h5>
+                                <p class="card-text">Free parking is available on-site. We also offer shuttle services
+                                    from nearby towns and encourage carpooling for environmental reasons.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="logo-icon me-3">
+                            <div class="sun-icon">
+                                <div class="sun-center"></div>
+                                <div class="sun-ring"></div>
+                                <div class="sun-ray" style="transform: translateX(-50%) rotate(0deg);"></div>
+                                <div class="sun-ray" style="transform: translateX(-50%) rotate(45deg);"></div>
+                                <div class="sun-ray" style="transform: translateX(-50%) rotate(90deg);"></div>
+                                <div class="sun-ray" style="transform: translateX(-50%) rotate(135deg);"></div>
+                                <div class="sun-ray" style="transform: translateX(-50%) rotate(180deg);"></div>
+                                <div class="sun-ray" style="transform: translateX(-50%) rotate(225deg);"></div>
+                                <div class="sun-ray" style="transform: translateX(-50%) rotate(270deg);"></div>
+                                <div class="sun-ray" style="transform: translateX(-50%) rotate(315deg);"></div>
+                            </div>
+                        </div>
+                        <div class="brand-text">
+                            <h1 class="text-white">BE.SPIRIT</h1>
+                            <p class="text-muted">FESTIVAL</p>
+                        </div>
+                    </div>
+                    <p class=" mb-4" style="max-width: 400px;">
+                        A transformative festival experience celebrating movement, music, and love in the heart of
+                        nature.
+                        Join our community of conscious souls for three days of magic.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Tickets</a></li>
+                        <li class="mb-2"><a href="#">Artist Lineup</a></li>
+                        <li class="mb-2"><a href="#">Schedule</a></li>
+                        <li class="mb-2"><a href="#">Camping</a></li>
+                        <li class="mb-2"><a href="#">Food & Vendors</a></li>
+                        <li class="mb-2"><a href="#">Transportation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Contact</h5>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="">hello@bespiritfestival.com</a>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="">+918888222211</a>
+                        </div>
+                        <div>
+                            <p class="mb-1">Be.Spirit Farm</p>
+                            <p class="mb-1">1234 Harmony Road</p>
+                            <p class="mb-0">Coimbatore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="text-muted mb-0">&copy; 2025 Be.Spirit Festival. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="d-flex flex-wrap justify-content-md-end gap-3">
+                            <a href="#" class="text-muted small">Privacy Policy</a>
+                            <a href="#" class="text-muted small">Terms of Service</a>
+                            <a href="#" class="text-muted small">Accessibility</a>
+                            <a href="#" class="text-muted small">Sustainability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="backToHome" class="back-to-home">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
